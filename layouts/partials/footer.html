@@ -28,13 +28,5 @@
   <script type="text/javascript" src="{{ $banner.RelPermalink }}"></script>
 {{ end }}
 
-<!-- Mermaid diagrams if enabled and present on the page -->
-{{ if and .Site.Params.renderMermaid (.Page.Store.Get "hasMermaid") }}
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-  </script>
-{{ end }}
-
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}
