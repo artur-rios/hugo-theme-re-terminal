@@ -8,9 +8,9 @@ hideComments=true
 
 # Hello in a new age
 
-You can call me Mirus and I forked the original Terminal theme for Hugo, because Radek, the original creator of the theme stop the maintenance and archived the repo. 
+You can call me Mirus and I forked the original Terminal theme for Hugo, because Radek, the original creator of the theme stop the maintenance and archived the repo.
 
-So I already pushed a few improvements that I did for my humble blog and I'm going to add some more features in the future, also any contribution is welcome 
+So I already pushed a few improvements that I did for my humble blog and I'm going to add some more features in the future, also any contribution is welcome
 
 Below you can read the original about from Radek
 

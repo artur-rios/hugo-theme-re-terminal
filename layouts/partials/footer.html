@@ -1,16 +1,14 @@
 <footer class="footer">
   <div class="footer__inner">
-    {{ if $.Site.Params.Copyright }}
-      <div class="copyright copyright--user">
+    <div class="copyright{{ if $.Site.Params.Copyright }} copyright--user{{ end }}">
+      {{ if $.Site.Params.Copyright }}
         <span>{{ $.Site.Params.Copyright | safeHTML }}</span>
-    {{ else }}
-      <div class="copyright">
+      {{ else }}
         <span>© {{ now.Year }} Powered by <a href="https://gohugo.io">Hugo</a></span>
-    {{ end }}
-      <span>:: <a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Original theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
-      <br>
-      <span>:: <a href="https://github.com/artur-rios/hugo-theme-re-terminal" target="_blank">Version</a> made by <a href="https://github.com/artur-rios" target="_blank">Artur Rios</a></span>
-      </div>
+      {{ end }}
+      <span><a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Original theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      <span><a href="https://github.com/artur-rios/hugo-theme-re-terminal" target="_blank">This version</a> is made by <a href="https://github.com/artur-rios" target="_blank">Artur Rios</a></span>
+    </div>
   </div>
 </footer>
 

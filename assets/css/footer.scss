@@ -24,19 +24,15 @@
 
   .copyright {
     display: flex;
-    flex-flow: row wrap;
-    flex: 1;
-    align-items: $centerTheme;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 4px;
     font-size: 1rem;
-    justify-content: $centerTheme;
 
     &--user {
       margin: auto;
       text-align: center;
-    }
-
-    & > *:first-child:not(:only-child) {
-      margin-right: 10px;
     }
 
     span {
