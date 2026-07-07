@@ -19,9 +19,10 @@ eg:
 ## Preforked era below
 
 - **Portfolio** (https://github.com/Louisload/hugo-theme-terminal-portfolio)
-  - Allows you to create a portfolio page (or several). Supports icons and subsections.
-  - Luís Rodrigues Alves (Louisload), a game dev and musician.
+    - Allows you to create a portfolio page (or several). Supports icons and subsections.
+    - Luís Rodrigues Alves (Louisload), a game dev and musician.
 
 - **Single Page Website** (https://github.com/justinnuwin/hugo-theme-terminal)
-  - A layout where the homepage can render lists of pages and the navigation menu can link to sections on the homepage.
-  - Justin Nguyen, software and hardware developer.
+    - A layout where the homepage can render lists of pages and the navigation menu can link to sections on the
+      homepage.
+    - Justin Nguyen, software and hardware developer.

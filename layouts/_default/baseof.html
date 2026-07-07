@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.Language }}">
 <head>
-  {{ block "title" . }}
+    {{ block "title" . }}
     <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}</title>
-  {{ end }}
-  {{ partial "head.html" . }}
+    {{ end }}
+    {{ partial "head.html" . }}
 
-  {{ block "head" . }}{{""}}{{ end }}
+    {{ block "head" . }}{{""}}{{ end }}
 
 
 </head>
 <body class="{{- ( or .Params.color $.Site.Params.ThemeColor ) -}}">
 {{ if .Site.Params.Banner }}
-  {{ with .Site.Params.Banner }}
-    <div id="banner">
+{{ with .Site.Params.Banner }}
+<div id="banner">
       <span>
         {{ if .url }}
           <a href="{{ .url }}">{{ .text }}</a>
@@ -21,35 +21,38 @@
           {{ .text }}
         {{ end }}
       </span>
-      {{ if .dismissible }}
-        <button type="button">x</button>
-      {{ end }}
-    </div>
-  {{ end }}
+    {{ if .dismissible }}
+    <button type="button">x</button>
+    {{ end }}
+</div>
+{{ end }}
 {{ end }}
 
-{{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default true) "container center" "container") }}
+{{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme |
+default true) "container center" "container") }}
 
-<div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default true) " headings--one-size" "" }}">
+<div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default true) " headings--one-size
+" "" }}">
 
-  {{ partial "header.html" . }}
+{{ partial "header.html" . }}
 
-  <div class="content">
+<div class="content">
     {{ block "main" . }}
     {{ end }}
-  </div>
+</div>
 
-  {{ block "footer" . }}
-    {{ partial "footer.html" . }}
-  {{ end }}
+{{ block "footer" . }}
+{{ partial "footer.html" . }}
+{{ end }}
 </div>
 
 <!-- Mermaid diagrams if present on the page -->
 {{ if .Page.Store.Get "hasMermaid" }}
-  <script type="module">
+<script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
-  </script>
+
+    mermaid.initialize({startOnLoad: true, theme: 'dark'});
+</script>
 {{ end }}
 
 </body>
