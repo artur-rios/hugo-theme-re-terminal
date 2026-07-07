@@ -34,18 +34,18 @@
 {{ if and $ctx.Params.coverCaption $isCoverCaptionEnabled }}
 <figure>
     <!-- Cover image found -->
-    <img alt="{{ .Title | plainify | default "
+    <img alt="{{ .Title | plainify | default " " }}"
          class="post-cover"
-         src="{{ $cover }}" " }}"
+         src="{{ $cover }}"
     title="{{ $ctx.Params.CoverCredit |plainify|default "Cover Image" }}" />
 
     <figcaption class="right">{{ $ctx.Params.coverCaption | safeHTML }}</figcaption>
 </figure>
 {{ else }}
 <!-- Cover image found -->
-<img alt="{{ .Title | plainify | default "
+<img alt="{{ .Title | plainify | default " " }}"
      class="post-cover"
-     src="{{ $cover }}" " }}"
+     src="{{ $cover }}"
 title="{{ $ctx.Params.CoverCredit |plainify|default "Cover Image" }}" />
 {{ end }}
 {{- end }}
