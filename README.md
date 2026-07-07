@@ -4,19 +4,13 @@
 
 Hello! I'm thrilled to announce a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
 
-As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features.
-Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined
-for real-world use.
+As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features. Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined for real-world use.
 
-This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo
-enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping
-the spirit of the original alive while adding fresh perspectives and innovations.
+This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
 
-In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking
-feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
+In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
 
-So, welcome aboard! I'm excited to have you join us on this journey as we shape the future of Hugo Theme re-Terminal
-together. Let's get started!
+So, welcome aboard! I'm excited to have you join us on this journey as we shape the future of Hugo Theme re-Terminal together. Let's get started!
 
 ## Changes vs original Terminal
 
@@ -38,8 +32,7 @@ together. Let's get started!
 
 ### ⚠️ The theme needs at least Hugo **Extended** v0.128.0.
 
-re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 below to v0.90.0 if you change the min
-version manually in mod files, but I didn't test it
+re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 below to v0.90.0 if you change the min version manually in mod files, but I didn't test it
 
 ---
 
@@ -83,10 +76,10 @@ You can find all of them in the browser's page inspector, but here is the list w
 
     /* code syntax */
     /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
-    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%);
+    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
     --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
     --syntax-value-color: color-mix(in srgb, var(--accent), white);
-
+  
     /* breakpoints */
     /* unfortunately, native CSS variables don't support media queries, so use SCSS vars instead */
     $phone: 684px;
@@ -96,23 +89,20 @@ You can find all of them in the browser's page inspector, but here is the list w
 
 #### Built-in shortcodes
 
-- **`image`** (props required: **`src`**; props optional: **`alt`**, **`position`** (**left** is default | center |
-  right), **`style`**)
-    - e.g.
+- **`image`** (props required: **`src`**; props optional: **`alt`**, **`position`** (**left** is default | center | right), **`style`**)
+  - e.g.
 
   ```go
   {{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
   ```
-- **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is
-  default | right), **`captionStyle`**)
-    - e.g.
+- **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**)
+  - e.g.
 
   ```go
   {{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}
   ```
-- **`code`** (props required: **`language`**; props optional: **`title`**, **`id`**, **`expand`** (default "△"), *
-  *`collapse`** (default "▽"), **`isCollapsed`**)
-    - e.g.
+- **`code`** (props required: **`language`**; props optional: **`title`**, **`id`**, **`expand`** (default "△"), **`collapse`** (default "▽"), **`isCollapsed`**)
+  - e.g.
 
   ```go
   {{< code language="css" title="Really cool snippet" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
@@ -148,17 +138,11 @@ A custom syntax highlighting based on PrismJS. All you need to do is to wrap you
 ```
 ````
 
-**Supported languages**: actionscript, apacheconf, applescript, bash, c, clike, cmake, coffeescript, cpp, csharp, csp,
-css, css-extras, diff, django, docker, elixir, elm, erlang, flow, fsharp, git, go, graphql, haml, handlebars, haskell,
-http, java, javascript, json, jsx, kotlin, latex, less, llvm, makefile, markdown, markup, markup-templating, nasm,
-objectivec, ocaml, perl, php, php-extras, powershell, processing, pug, python, r, reason, ruby, rust, sass, scala,
-scheme, scss, sql, stylus, swift, textile, toml, tsx, twig, typescript, vim, visual-basic, wasm, yaml.
+**Supported languages**: actionscript, apacheconf, applescript, bash, c, clike, cmake, coffeescript, cpp, csharp, csp, css, css-extras, diff, django, docker, elixir, elm, erlang, flow, fsharp, git, go, graphql, haml, handlebars, haskell, http, java, javascript, json, jsx, kotlin, latex, less, llvm, makefile, markdown, markup, markup-templating, nasm, objectivec, ocaml, perl, php, php-extras, powershell, processing, pug, python, r, reason, ruby, rust, sass, scala, scheme, scss, sql, stylus, swift, textile, toml, tsx, twig, typescript, vim, visual-basic, wasm, yaml.
 
 ## How to start
 
-You can download the theme manually by going
-to [https://github.com/mirus-ua/hugo-theme-re-terminal.git](https://github.com/mirus-ua/hugo-theme-re-terminal.git) and
-pasting it to `themes/re-terminal` in your root directory.
+You can download the theme manually by going to [https://github.com/mirus-ua/hugo-theme-re-terminal.git](https://github.com/mirus-ua/hugo-theme-re-terminal.git) and pasting it to `themes/re-terminal` in your root directory.
 
 You can also choose **one of the 3 possibilities** to install the theme:
 
@@ -189,9 +173,7 @@ and in your config file add:
   path = 'github.com/mirus-ua/hugo-theme-re-terminal'
 ```
 
-Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme
-as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more
-about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
+Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
 
 ### Install theme locally
 
@@ -223,8 +205,7 @@ then please try to remove `theme = "re-terminal"` from your config file.
 hugo server -t re-terminal
 ```
 
-and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to
-refresh your browser every single time.
+and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
 
 ## How to configure
 
@@ -353,54 +334,40 @@ pagination.pagerSize = 5
   path = 'github.com/mirus-ua/hugo-theme-re-terminal'
 ```
 
-to `config.toml` file in your Hugo root directory and change params fields. In case you need,
-here's [a YAML version](https://gist.github.com/panr/9eeea6f595c257febdadc11763e3a6d1).
+to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/9eeea6f595c257febdadc11763e3a6d1).
 
 **NOTE:** Please keep in mind that `main menu` supports only one level of nesting.
 
 ## Post archetype
 
-See the default `post` file params supported by the
-theme — https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/archetypes/posts.md
+See the default `post` file params supported by the theme — https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/archetypes/posts.md
 
 ## Add-ons
 
-- **Comments** — for adding comments to your blog posts please take a look at
-  `layouts/partials/comments.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments.html.
-- **Comments counter** — for adding comments counter to your blog posts please take a look at
-  `layouts/partials/comments_counter.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments_counter.html.
-- **Extended Head** — please take a look at
-  `layouts/partials/extended_head.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_head.html
-- **Extended Footer** — please take a look at
-  `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments.html.
+- **Comments counter** — for adding comments counter to your blog posts please take a look at `layouts/partials/comments_counter.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments_counter.html.
+- **Extended Head** — please take a look at `layouts/partials/extended_head.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_head.html
+- **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
 
 ### Low-level add-ons
 
-- **Post base** — Renders bare minimum of posts' content. For motivation and details take a look
-  at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/single_basic.html
+- **Post base** — Renders bare minimum of posts' content. For motivation and details take a look at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/single_basic.html
 
 ## How to edit the theme `<a id="how-to-edit" />`
 
-If you are using as a remote Hugo Module (you don't have the theme files in the `theme/re-terminal`) and you have to
-override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point
-things you want to change.
+If you are using as a remote Hugo Module (you don't have the theme files in the `theme/re-terminal`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
-If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to
-go to `themes/re-terminal` and modify the files. No compilation step needed.
+If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/re-terminal` and modify the files. No compilation step needed.
 
 ## Found a bug? `<a id="bug" />`
 
-If you spot any bugs, please use [Issue Tracker](https://github.com/mirus-ua/hugo-theme-re-terminal/issues) or create a
-new [Pull Request](https://github.com/mirus-ua/hugo-theme-re-terminal/pulls) to fix the issue.
+If you spot any bugs, please use [Issue Tracker](https://github.com/mirus-ua/hugo-theme-re-terminal/issues) or create a new [Pull Request](https://github.com/mirus-ua/hugo-theme-re-terminal/pulls) to fix the issue.
 
 ## New cool idea or feature? `<a id="feature" />`
 
-The theme is in constant development since 2019 and has got many cool features that helped many of you and made the
-theme better. But there were also many features that I wasn't sure about because I want to keep the theme as simple as
-possible.
+The theme is in constant development since 2019 and has got many cool features that helped many of you and made the theme better. But there were also many features that I wasn't sure about because I want to keep the theme as simple as possible.
 
-So, let's say you have an idea of how to extend the theme. That's cool and you're welcome to do that, just follow these
-steps:
+So, let's say you have an idea of how to extend the theme. That's cool and you're welcome to do that, just follow these steps:
 
 - fork the theme
 - implement the feature
@@ -409,15 +376,13 @@ steps:
 - add info about your work to `COMMUNITY-FEATURES.md`
 - make a PR with edited `COMMUNITY-FEATURES.md`
 
-This will help keeping the theme close to its roots, and also allow anyone who wishes to improve it and match their
-needs, to do whatever they want.
+This will help keeping the theme close to its roots, and also allow anyone who wishes to improve it and match their needs, to do whatever they want.
 
 Sounds OK? Cool, let's rock! 🤘
 
 ## re-Terminal theme user?
 
-I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution
-and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
 
 ## License
 
@@ -425,6 +390,4 @@ Copyright © 2019-2022 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
 Copyright © 2024-now Mirus
 
-The theme is released under the MIT License. Check
-the [original theme license](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/LICENSE.md) for additional
-licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/LICENSE.md) for additional licensing information.

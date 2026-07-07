@@ -1,17 +1,15 @@
 <footer class="footer">
-    <div class="footer__inner">
-        <div class="copyright{{ if $.Site.Params.Copyright }} copyright--user{{ end }}">
-            {{ if $.Site.Params.Copyright }}
-            <span>{{ $.Site.Params.Copyright | safeHTML }}</span>
-            {{ else }}
-            <span>© {{ now.Year }} Powered by <a href="https://gohugo.io">Hugo</a></span>
-            {{ end }}
-            <span><a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Original theme</a> made by <a
-                href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
-            <span><a href="https://github.com/artur-rios/hugo-theme-re-terminal" target="_blank">This version</a> is made by <a
-                href="https://github.com/artur-rios" target="_blank">Artur Rios</a></span>
-        </div>
+  <div class="footer__inner">
+    <div class="copyright{{ if $.Site.Params.Copyright }} copyright--user{{ end }}">
+      {{ if $.Site.Params.Copyright }}
+        <span>{{ $.Site.Params.Copyright | safeHTML }}</span>
+      {{ else }}
+        <span>© {{ now.Year }} Powered by <a href="https://gohugo.io">Hugo</a></span>
+      {{ end }}
+      <span><a href="https://github.com/mirus-ua/hugo-theme-re-terminal" target="_blank">Original theme</a> made by <a href="https://github.com/mirus-ua" target="_blank">Mirus</a></span>
+      <span><a href="https://github.com/artur-rios/hugo-theme-re-terminal" target="_blank">This version</a> is made by <a href="https://github.com/artur-rios" target="_blank">Artur Rios</a></span>
     </div>
+  </div>
 </footer>
 
 {{ $menu := resources.Get "js/menu.js" | js.Build }}
@@ -19,13 +17,13 @@
 
 {{ $bundle := slice $menu $prism | resources.Concat "bundle.js" | resources.Minify }}
 
-<script src="{{ $bundle.RelPermalink }}" type="text/javascript"></script>
+<script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
 <!-- Banner JS if it enabled -->
 {{ if .Site.Params.Banner }}
-{{ $banner := resources.Get "js/banner.js" | js.Build | resources.Minify }}
+  {{ $banner := resources.Get "js/banner.js" | js.Build | resources.Minify }}
 
-<script src="{{ $banner.RelPermalink }}" type="text/javascript"></script>
+  <script type="text/javascript" src="{{ $banner.RelPermalink }}"></script>
 {{ end }}
 
 <!-- Extended footer section-->

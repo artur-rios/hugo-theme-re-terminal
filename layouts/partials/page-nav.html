@@ -1,9 +1,8 @@
 {{ $backLabel := .Params.nav_back_label | default "Overview" }}
 {{ $backUrl   := .Params.nav_back_url   | default "/" }}
 <div class="page-nav">
-    <span>Back to <a href="{{ $backUrl }}">{{ $backLabel }}</a></span>
-    {{- with .Params.nav_next_url }}
-    <span class="page-nav-next"> | See also <a
-        href="{{ . }}">{{ $.Params.nav_next_label | default "Next page" }}</a></span>
-    {{- end }}
+  <span>Back to <a href="{{ $backUrl }}">{{ $backLabel }}</a></span>
+  {{- with .Params.nav_next_url }}
+  <span class="page-nav-next"> | See also <a href="{{ . }}">{{ $.Params.nav_next_label | default "Next page" }}</a></span>
+  {{- end }}
 </div>

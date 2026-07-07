@@ -11,10 +11,9 @@ Toc=true
 
 ## What is going on?
 
-Hello. This is a first step toward color schema flexibility.
+Hello. This is a first step toward color schema flexibility. 
 
 You still can use existing predefined `accent` colors from the list:
-
 - blue
 - green
 - orange
@@ -25,7 +24,7 @@ but if you need to pick another accent colors you can do it with the help of nat
 
 Just create, if you haven't any yet, `static/style.css`
 
-and redefine two CSS variables, like this
+and redefine two CSS variables, like this 
 
 ```css
 :root {
@@ -34,7 +33,7 @@ and redefine two CSS variables, like this
 }
 ```
 
-### Any other CSS Variable I should know?
+### Any other CSS Variable I should know? 
 
 You can find all of them in the browser's page inspector, but here is the list with default values anyway:
 
@@ -48,7 +47,7 @@ You can find all of them in the browser's page inspector, but here is the list w
 
     /* code syntax */
     /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
-    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%);
+    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
     --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
     --syntax-value-color: color-mix(in srgb, var(--accent), white);
 
@@ -59,9 +58,9 @@ You can find all of them in the browser's page inspector, but here is the list w
   }
 ```
 
-### Future plans
 
-Already right now you can play with CSS Variables and achieve decent results, but I hope will work on some light-ish
-presets and maybe on exposing event more tokens to the users.
+### Future plans
+Already right now you can play with CSS Variables and achieve decent results, but I hope will work on some light-ish presets and maybe on exposing event more tokens to the users.
+
 
 ## The interactive demo

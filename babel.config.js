@@ -1,18 +1,18 @@
-module.exports = function (api) {
-    api.cache(true);
+module.exports = function(api) {
+  api.cache(true);
 
-    const presets = [
-        [
-            "@babel/preset-env",
-            {
-                targets: "last 2 versions, >1%, not dead",
-            },
-        ],
-    ];
-    const plugins = [];
+  const presets = [
+    [
+      "@babel/preset-env",
+      {
+        targets: "last 2 versions, >1%, not dead",
+      },
+    ],
+  ];
+  const plugins = [];
 
-    return {
-        presets,
-        plugins,
-    };
+  return {
+    presets,
+    plugins,
+  };
 };
