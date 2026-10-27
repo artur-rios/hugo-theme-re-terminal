@@ -1,5 +1,11 @@
 # re-Terminal
 
+> [!NOTE]
+> This is the real, open-source code of hugo-theme-re-terminal. Its home is Forgejo, at
+> https://git.techcraftsmen.net/artur-rios/hugo-theme-re-terminal; the copy on GitHub is a read-only mirror, for viewing only, and
+> its issues and pull requests are not followed. If you want to contribute, email me at
+> arturdev@duck.com.
+
 ## Welcome to Hugo Theme re-Terminal!
 
 Hello! I'm thrilled to announce a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
