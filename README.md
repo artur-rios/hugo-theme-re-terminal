@@ -1,11 +1,5 @@
 # re-Terminal
 
-> [!NOTE]
-> This is the real, open-source code of hugo-theme-re-terminal. Its home is Forgejo, at
-> https://git.techcraftsmen.net/artur-rios/hugo-theme-re-terminal; the copy on GitHub is a read-only mirror, for viewing only, and
-> its issues and pull requests are not followed. If you want to contribute, email me at
-> arturdev@duck.com.
-
 ## Welcome to Hugo Theme re-Terminal!
 
 Hello! I'm thrilled to announce a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
@@ -389,6 +383,11 @@ Sounds OK? Cool, let's rock! 🤘
 ## re-Terminal theme user?
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
+
+## Contributing
+
+The GitHub repository is a read-only mirror for the real, open-source code of hugo-theme-re-terminal. Its home is Forgejo, at
+https://git.techcraftsmen.net/artur-rios/hugo-theme-re-terminal. If you want to contribute, e-mail me at arturdev@duck.com.
 
 ## License
 
