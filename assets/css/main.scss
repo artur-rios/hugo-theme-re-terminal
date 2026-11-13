@@ -61,6 +61,7 @@ a {
   color: inherit;
 
   /* Waiting for a better times... */
+
   /* &:has(code) {
     text-decoration-color: var(--accent);
   } */
@@ -112,6 +113,7 @@ figure {
     margin-top: 5px;
     background: var(--accent);
     color: var(--accent-contrast-color);
+
     /* opacity: .8; */
 
     &.left {
