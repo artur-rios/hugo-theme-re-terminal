@@ -1,5 +1,6 @@
 /* PrismJS 1.24.1
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+actionscript+apacheconf+applescript+bash+c+csharp+cpp+cmake+coffeescript+csp+css-extras+diff+django+docker+elixir+elm+erlang+fsharp+flow+git+go+graphql+haml+handlebars+haskell+http+java+json+kotlin+latex+less+llvm+makefile+markdown+markup-templating+nasm+objectivec+ocaml+perl+php+php-extras+powershell+processing+pug+python+r+jsx+tsx+reason+ruby+rust+sass+scss+scala+scheme+sql+stylus+swift+textile+toml+twig+typescript+vim+visual-basic+wasm+yaml&plugins=line-highlight+line-numbers+jsonp-highlight+highlight-keywords+command-line+toolbar+copy-to-clipboard */
+
 /**
  * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/chriskempson/tomorrow-theme
@@ -18,11 +19,9 @@ pre[class*="language-"] {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
-
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	-ms-hyphens: none;
@@ -111,6 +110,7 @@ pre[class*="language-"] {
 .token.bold {
 	font-weight: bold;
 }
+
 .token.italic {
 	font-style: italic;
 }
@@ -134,12 +134,9 @@ pre[data-line] {
 	right: 0;
 	padding: inherit 0;
 	margin-top: 1em; /* Same as .prism’s padding-top */
-
 	background: hsla(24, 20%, 50%,.08);
 	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-
 	pointer-events: none;
-
 	line-height: inherit;
 	white-space: pre;
 }
@@ -187,9 +184,11 @@ pre[data-line] {
 pre[id].linkable-line-numbers span.line-numbers-rows {
 	pointer-events: all;
 }
+
 pre[id].linkable-line-numbers span.line-numbers-rows > span:before {
 	cursor: pointer;
 }
+
 pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
 	background-color: rgba(128, 128, 128, .2);
 }
@@ -214,7 +213,6 @@ pre[class*="language-"].line-numbers > code {
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
-
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -243,7 +241,6 @@ pre[class*="language-"].line-numbers > code {
 	letter-spacing: -1px;
 	margin-right: 1em;
 	pointer-events: none;
-
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -333,4 +330,3 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 	color: inherit;
 	text-decoration: none;
 }
-
