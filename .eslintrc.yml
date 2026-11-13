@@ -9,7 +9,14 @@ extends:
   - eslint:recommended
   - prettier
 
-parser: babel-eslint
+# babel-eslint is in neither package.json nor a lock file, so ESLint could not load it: the default parser, told
+# the theme's JS is ES2020 (optional chaining), reads it instead.
+parserOptions:
+  ecmaVersion: 2020
+
+# A minified PrismJS build, not the theme's own code.
+ignorePatterns:
+  - assets/js/prism.js
 
 rules:
   # best practices
@@ -58,3 +65,11 @@ globals:
   self: true
   fetch: true
   Headers: true
+
+# banner.js calls the global removeEventListener (window's), which airbnb's no-restricted-globals forbids.
+overrides:
+  - files: assets/js/banner.js
+    rules:
+      no-restricted-globals: 0
+    globals:
+      removeEventListener: true

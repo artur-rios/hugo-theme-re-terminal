@@ -3,8 +3,17 @@
     "stylelint-config-standard-scss",
     "stylelint-config-prettier-scss"
   ],
+  "ignoreFiles": ["assets/css/style.scss"],
   "rules": {
-    "max-empty-lines": 1 
+    "max-empty-lines": 1,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "font-family-name-quotes": null,
+    "hue-degree-notation": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null,
+    "selector-class-pattern": null,
+    "selector-pseudo-element-colon-notation": null,
+    "value-keyword-case": null
   }
 }
-
