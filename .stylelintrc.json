@@ -3,14 +3,19 @@
     "stylelint-config-standard-scss",
     "stylelint-config-prettier-scss"
   ],
+  "plugins": [
+    "@stylistic/stylelint-plugin"
+  ],
   "ignoreFiles": ["assets/css/style.scss"],
   "rules": {
-    "max-empty-lines": 1,
+    "@stylistic/scss/max-empty-lines": 1,
     "alpha-value-notation": null,
+    "color-function-alias-notation": null,
     "color-function-notation": null,
     "font-family-name-quotes": null,
     "hue-degree-notation": null,
     "no-descending-specificity": null,
+    "property-no-deprecated": null,
     "property-no-vendor-prefix": null,
     "selector-class-pattern": null,
     "selector-pseudo-element-colon-notation": null,
